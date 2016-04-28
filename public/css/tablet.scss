@@ -1,0 +1,18 @@
+/**
+ * Style for phablets & tablets
+ */
+// Variables vs Bootstrap
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+@import 'site/variables';
+
+@media (min-width: map-get($grid-breakpoints, md)) {
+	// Small grid
+	//
+	// Columns, offsets, pushes, and pulls for the small device range, from phones
+	// to tablets.
+	@import 'tablet/home';
+	@import 'tablet/layout';
+	@import 'tablet/contact';
+	@import 'tablet/header';
+}

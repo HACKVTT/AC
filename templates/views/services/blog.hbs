@@ -1,0 +1,67 @@
+	<section class="covercontent">
+		<div class="container-fluid bg-white">
+			<div class="row">
+				{{> sidebar}}
+
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="maincontent">
+							<ol class="breadcrumb">
+							    <li><a href="#">Home</a></li>
+							    <li><a href="#">Library</a></li>
+							    <li class="active">Data</li>
+							</ol>
+							
+							<div class="container newsdetail-content">
+								<h1 class="title">
+									{{data.post.title}}
+
+									{{text}}
+								</h1>
+			
+								<div class="newsdetail-text">
+									{{{data.post.content.extended}}}
+								</div><!-- end newsdetail-text --> 
+
+								<div class="mod-others-news">
+								    <div class="mod-others-news__title">
+								        <strong>Tin liên quan</strong>
+								    </div>
+								    <div class="mod-others-news__content">
+										<ul>
+											<li>
+												<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												<a href="">Thay đổi tên doanh nghiệp</a></li>
+											<li class="linkactive">
+												<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												<a href="">Thay đổi địa chỉ công ty</a></li>
+											<li>
+												<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												<a href="">Thay đổi thành viên công ty</a>
+											</li>
+											<li>
+												<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												<a href="">Tăng vốn điều lệ</a>
+											</li>
+											<li>
+												<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												<a href="">Bổ sung nghành nghề</a>
+											</li>
+											<li>
+												<i class="fa fa-arrow-right" aria-hidden="true"></i>
+												<a href="">Giấy phép hành nghề</a>
+											</li>
+										</ul>
+								    </div>
+								</div><!--end mod-others-news -->						
+	
+							</div> <!-- end news-content -->
+						</div><!-- end maincontent -->
+
+					</div> <!-- end row -->
+				</div><!-- end col-sm-6 -->
+
+				{{> sidebarright}}
+			</div> <!-- end row -->
+		</div> <!-- end container-fluid -->
+	</section><!-- end covercontent -->

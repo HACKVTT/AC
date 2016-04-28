@@ -1,0 +1,52 @@
+body {
+	font-size: 1.6rem;
+	background: #fff url("../images/bg.gif") 0 0 repeat;
+}
+
+header {
+	background: $button-bg-gradient;
+	margin-bottom: 2rem;
+}
+
+.bg-white {
+	background: $white;
+	padding: 1.5rem;
+}
+.maincontent {
+	margin-bottom: 2rem;
+}
+
+.breadcrumb {
+	background: $progress-bg-gradient-to-left;
+	padding: 0.8rem 1.5rem;
+	border-radius: 0;
+	> li {
+
+			a {
+				color: $white;
+				font-weight: 600;
+			}
+
+			&.active {
+				color: $white;
+			}
+
+			+ li::before {
+				color: $white;
+			}		
+		}
+}
+
+.mb1 {
+	margin-bottom: 1rem;
+}
+
+// Format for All tittle
+.title {
+	color: $color-gradient-2;
+}
+
+img{
+	max-width: 100%;
+	overflow: hidden;
+}

@@ -1,0 +1,50 @@
+{
+  "name": "ketoanac",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Public website of KeToanAC",
+  "config": {
+    "src": "public",
+    "dist": "~dist"
+  },   
+  "dependencies": {
+    "keystone": "git+https://github.com/keystonejs/keystone",
+    "async": "^1.5.0",
+    "moment": "^2.10.6",
+    "cloudinary": "^1.2.4",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.5",
+    "node-sass": "^3.3.2",
+    "node-sass-middleware": "^0.9.7", 
+    "lodash": "^4.10.0",    
+    "dotenv": "^2.0.0"
+  },
+  "devDependencies": {
+    "autoprefixer": "^6.3.6",
+    "browser-sync": "^2.12.2",
+    "del": "^2.2.0",
+    "gulp": "^3.9.1",
+    "gulp-consolidate": "^0.2.0",
+    "gulp-iconfont": "^6.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-load-plugins": "^1.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^6.1.0",
+    "gulp-sass": "^2.2.0",
+    "gulp-shell": "^0.5.2",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-useref": "^3.0.8",
+    "pre-commit": "^1.1.2",
+    "sass-lint": "^1.5.1"
+    
+  },
+  "engines": {
+    "node": ">=4.0.0",
+    "npm": ">=2.0.0"
+  },
+  "main": "keystone.js",
+  "scripts": {
+    "test": "eslint models/ public/ routes/ templates/ updates/ gulpfile.js keystone.js",
+    "start": "node keystone.js"
+  }
+}

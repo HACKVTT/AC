@@ -1,0 +1,12 @@
+@media (min-width: 992px) {
+  body {
+    font-size: 1.6rem; }
+  .container-fluid {
+    max-width: 1170px; }
+  .faqs-content {
+    margin-left: -1.5rem;
+    margin-right: -1.5rem; }
+  #navbarTop.collapse {
+    display: block; }
+  #navbarTop ul li.nav-item a {
+    padding: 1em 1.5em; } }

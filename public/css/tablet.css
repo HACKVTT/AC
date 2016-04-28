@@ -1,0 +1,47 @@
+/**
+ * Style for phablets & tablets
+ */
+@media (min-width: 768px) {
+  body {
+    font-size: 1.3rem; }
+  .contact-info__communicate label {
+    margin-bottom: 1rem; }
+    .contact-info__communicate label i {
+      padding-right: 1rem;
+      float: left;
+      margin-bottom: 1.5rem;
+      margin-top: 0.3rem;
+      color: #3464d9; }
+  .cover-header {
+    background: url("../images/bg-top.png") right bottom repeat #3464d9; }
+  #navbarTop {
+    padding: 0; }
+    #navbarTop.collapse {
+      display: block; }
+    #navbarTop ul li.nav-item {
+      float: left; }
+      #navbarTop ul li.nav-item a {
+        padding: 1em;
+        text-transform: uppercase;
+        font-weight: 600;
+        position: relative;
+        border-bottom: none; }
+        #navbarTop ul li.nav-item a:after {
+          width: 0;
+          height: 0.4rem;
+          transition: all ease 0.4s;
+          background: transparent;
+          display: block;
+          position: absolute;
+          left: 50%;
+          bottom: 0.8rem;
+          transform: translate(-50%, 0);
+          content: ""; }
+      #navbarTop ul li.nav-item:hover a, #navbarTop ul li.nav-item.top-active a {
+        background: none; }
+        #navbarTop ul li.nav-item:hover a:after, #navbarTop ul li.nav-item.top-active a:after {
+          width: 30%;
+          background: #fff;
+          transition: all ease 0.4s; }
+  .btn-toggle-navtop {
+    float: none; } }

@@ -1,0 +1,8 @@
+body {
+	font-size: 1.6rem;
+}
+
+.container-fluid {
+	max-width: map-get($container-max-widths, xl);
+}
+

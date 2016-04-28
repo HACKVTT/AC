@@ -1,0 +1,39 @@
+.mod-others-news {
+	margin-bottom: 2rem;
+
+	&__title {
+		font-weight: 600;
+		color: $color-gradient-2;
+		margin-bottom: 1rem;
+		text-transform: uppercase;
+	}
+
+	&__content {
+		margin-bottom: 1rem;
+		ul {
+			list-style: none;
+			padding-left: 0;
+
+			li {
+				margin-bottom: 0.5rem;
+				a, i {
+					color: $link-color;
+				}
+
+				&:hover {
+					cursor: pointer;
+				}
+				
+				&:hover a, &:hover i{
+					color: $link-hover-color;
+				}
+				
+				i {
+					font-size: 1.2rem;
+					margin-right: 0.5rem;
+				}
+
+			}
+		}
+	}
+}

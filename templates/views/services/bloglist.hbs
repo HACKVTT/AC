@@ -1,0 +1,42 @@
+	<section class="covercontent">
+		<div class="container-fluid bg-white">
+			<div class="row">
+				{{> sidebar}}
+
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="maincontent">
+							<ol class="breadcrumb">
+							    <li><a href="#">Trang chủ</a></li>
+							    <li><a href="#">Library</a></li>
+							    <li class="active">Data</li>
+							</ol>
+							
+							<div class="container news-content">
+								{{#each data.posts}}
+								<div class="block-item-news">
+									<h2 class="block-item-news__title">
+										<a href="{{cateservice.slug}}/{{slug}}">{{title}}</a>
+									</h2>
+									<div class="block-item-news__content">
+										<a href="{{cateservice.slug}}/{{slug}}" class="block-item-news__img-thumb">
+											<img src="/images/{{image.filename}}">
+										</a>
+
+										<div class="block-item-news__brief">
+											{{{content.brief}}}
+										</div>
+									</div><!-- end content-news-item -->
+								</div> <!--end block-item-horizontal -->
+								{{/each}}
+	
+							</div> <!-- end news-content -->
+						</div><!-- end maincontent -->
+
+					</div> <!-- end row -->
+				</div><!-- end col-sm-6 -->
+
+				{{> sidebarright}}
+			</div> <!-- end row -->
+		</div> <!-- end container-fluid -->
+	</section><!-- end covercontent -->

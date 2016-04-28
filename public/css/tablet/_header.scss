@@ -1,0 +1,54 @@
+.cover-header {
+	background: url("../images/bg-top.png") right bottom repeat $color-gradient-2 ;
+}
+
+
+#navbarTop {
+	padding: 0;
+
+	&.collapse {
+		display: block;
+	}
+	
+	ul {
+		li {
+			&.nav-item {
+				float: left;
+				a {
+					padding: 1em;
+					text-transform: uppercase;
+					font-weight: 600;
+					position: relative;
+					border-bottom: none;
+
+					&:after {
+						width: 0;
+						height: 0.4rem;
+						transition: all ease 0.4s;
+						background: transparent;
+						display: block;
+						position: absolute;
+						left: 50%;
+						bottom: 0.8rem;
+						transform: translate(-50%, 0);
+						content: "";
+					}
+				}
+				&:hover, &.top-active {
+					a {
+						background: none;
+						&:after{
+							width: 30%;
+							background: $white;
+							transition: all ease 0.4s;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.btn-toggle-navtop {
+	float: none;
+}

@@ -1,0 +1,14 @@
+ul.social {
+	li {
+		display: inline-block;
+		margin: 0 0.5em;
+		&:hover a{
+			opacity: 0.7;
+		}
+
+		i {
+			font-size: 2em;
+			line-height: 1.4;
+		}
+	}
+}

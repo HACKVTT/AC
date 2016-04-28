@@ -1,0 +1,33 @@
+.contact-info {
+	margin-top: 2rem;
+	margin-bottom: 3rem;
+	
+	&__name {
+		text-transform: uppercase;
+		font-weight: 600;
+	}
+
+	&__communicate {
+		label {
+			display: block;
+			margin-bottom: 1rem;
+
+			i{
+				padding-right: 1rem;
+				color: $color-gradient-2;
+			}
+		}
+	}
+}
+
+.frm-contact {
+	margin-top: 3rem;
+	margin-bottom: 5rem;
+
+	.form-control {
+		font-size: 1.6rem;
+	}
+	.btn {
+		font-size: 1.6rem;
+	}
+}

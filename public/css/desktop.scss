@@ -1,0 +1,23 @@
+// Variables vs Bootstrap
+@import 'bootstrap/variables';
+@import 'bootstrap/mixins';
+@import 'site/variables';
+
+@media (min-width: map-get($grid-breakpoints, lg)) {
+	// Medium grid
+	//
+	// Columns, offsets, pushes, and pulls for the desktop device range.
+	@import 'desktop/home';
+	@import 'desktop/layout';
+	@import 'desktop/faq';
+	@import 'desktop/contact';
+	@import 'desktop/header';
+}
+
+
+@media (min-width: map-get($grid-breakpoints, xl)) {
+	// Large grid
+	//
+	// Columns, offsets, pushes, and pulls for the large desktop device range.
+	// @import 'desktop/layout-large';
+}

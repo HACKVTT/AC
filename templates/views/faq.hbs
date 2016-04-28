@@ -1,0 +1,46 @@
+	<section class="covercontent">
+		<div class="container-fluid bg-white">
+			<div class="row">
+				{{> sidebar}}
+
+				<div class="col-sm-6">
+					<div class="row">
+						<div class="maincontent">
+							<ol class="breadcrumb">
+							    <li><a href="#">Home</a></li>
+							    <li><a href="#">Library</a></li>
+							    <li class="active">Data</li>
+							</ol>
+							
+							<div class="container faqs-content">
+							
+								<div id="faqAccordion" role="tablist" aria-multiselectable="true">
+
+									{{#each data.faqs}}
+								    <div class="panel panel-primary">
+								        <div class="panel-heading" role="tab">
+								            <h4 class="panel-title">
+												<a data-toggle="collapse" data-parent="#faqAccordion" href="#collapse{{_id}}" aria-controls="collapse{{_id}}">
+													{{title}}
+												</a>
+											</h4>
+								        </div>
+								        <div id="collapse{{_id}}" class="panel-collapse collapse" role="tabpanel">
+								            {{{content.extended}}}
+								        </div>
+								    </div>
+								    {{/each}}
+								</div>
+
+
+	
+							</div> <!-- end news-content -->
+						</div><!-- end maincontent -->
+
+					</div> <!-- end row -->
+				</div><!-- end col-sm-6 -->
+
+				{{> sidebarright}}
+			</div> <!-- end row -->
+		</div> <!-- end container-fluid -->
+	</section><!-- end covercontent -->

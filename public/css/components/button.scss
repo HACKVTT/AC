@@ -1,0 +1,99 @@
+.button {
+	@include size(135px, 35px);
+	display: block;
+	text-align: center;
+	font-size: 1.2rem;
+	border: none;
+  	border-radius: 3px;
+  	padding: 0;
+  	cursor: pointer;
+	&:hover { opacity: .9 }
+	&:focus { outline: none }
+}
+
+.button--arrow {
+	@include size(356px, 40px);
+	text-align: left;
+	font-size: 1.7rem;
+	padding: 0 1.5rem;
+	position: relative;
+
+	&:before, &:after {
+		content: '';
+		display: block;
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:before {
+		@include size(30px, 2px);
+		background: $orange;
+		right: 23px;
+	}
+	&:after {
+		@include size(0px);
+		border-top: 4px solid transparent;
+		border-left: 8px solid $orange;
+		border-bottom: 4px solid transparent;
+		right: 15px;
+	}
+}
+
+.button--white 	{
+	background: $white;
+	color: $orange;
+	border: solid 1px $orange
+}
+
+.button--orange {
+	background: $button-bg-gradient;
+	color: $white
+}
+
+.button--apple {
+	background: $apple;
+	color: $white;
+
+	span {
+		display: inline-block;
+		font-size: 1.2rem;
+		color: $white;
+		height: 17px;
+		line-height: 1.7rem;
+
+		i {
+			font-size: 1.4rem;
+			line-height: 1.7rem;
+			color: $white;
+			vertical-align: top;
+			margin-right: 1rem;
+		}
+	}
+}
+
+.button--like {
+	background: transparent;
+
+	span {
+		font-size: 1.4rem;
+		font-weight: $font-weight-bold;
+		display: inline-block;
+		height: 21px;
+
+		i {
+			font-size: 1.4rem;
+			vertical-align: top;
+			line-height: 2.1rem;
+			margin-right: .9rem;
+		}
+	}
+
+	&:hover 	{ color: $orange }
+	&:focus 	{ color: $orange }
+}
+
+.button--share {
+	@extend .button--like;
+	font-size: 1.2rem;
+	font-weight: normal;
+}

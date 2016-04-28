@@ -1,0 +1,49 @@
+.footer-cover {
+	padding: 3em 0 0;
+	background: $progress-bg-gradient-to-bottom;
+}
+
+.footer-above {
+	color: $white;
+	margin-bottom: 2em;
+	display: inline-block;
+
+	.title-link-footer{
+		font-size: 2.6rem;
+		text-transform: uppercase;
+		margin-bottom: 1em;
+
+		a {
+			color: $white;
+		}
+	}
+
+	ul {
+		padding-left: 0;
+		list-style: none;
+
+		li {
+			line-height: 2;
+
+			a {
+				color: $white;
+				padding-left: 0.5rem;
+			}
+			i {
+				font-size: 1rem;
+			}
+
+			&:hover a{
+				text-decoration: underline;
+			}
+		}
+	}
+}
+
+.footer-bottom {
+	clear: both;
+	color: $white;
+	line-height: 1.4;
+	padding: 1em 0;
+}
+

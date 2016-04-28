@@ -1,0 +1,21 @@
+@import 'site/variables';
+
+@import 'bootstrap/bootstrap';
+
+@import 'site/icons';
+
+@import 'site/layout';
+
+@import 'site/home';
+@import 'site/footer';
+@import 'site/header';
+@import 'site/newsdetail';
+@import 'site/contact';
+
+//============== Import component =================//
+@import 'components/navbar';
+@import 'components/sidebarleft';
+@import 'components/social';
+@import 'components/list-news';
+@import 'components/other-news';
+@import 'components/accordion-faq';

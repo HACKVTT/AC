@@ -1,0 +1,16 @@
+#navbarTop {
+	&.collapse {
+		display: block;
+	}
+
+	ul {
+		li {
+			&.nav-item {
+				a {
+					padding: 1em 1.5em;
+				}
+			}
+		}
+	}	
+}
+

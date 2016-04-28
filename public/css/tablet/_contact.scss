@@ -1,0 +1,15 @@
+.contact-info {
+	&__communicate {
+		label {
+			margin-bottom: 1rem;
+
+			i{
+				padding-right: 1rem;
+				float: left;
+				margin-bottom: 1.5rem;
+				margin-top: 0.3rem;
+				color: $color-gradient-2;
+			}
+		}
+	}
+}

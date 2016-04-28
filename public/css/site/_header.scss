@@ -1,0 +1,70 @@
+.cover-header {
+	background: $button-bg-gradient;
+}
+
+#navbarTop {
+	padding: 0;
+
+	ul {
+		li {
+			&.nav-item {
+				display: block;
+				float: none;
+				margin-left: 0;
+
+				a {
+					padding: 1em 1.5em;
+					text-transform: uppercase;
+					font-weight: 600;
+					border-bottom: 1px solid $white;
+
+				}
+				&:hover, &.top-active {
+					a {
+						background: $progress-bg-gradient;
+					}
+				}
+			}
+		}
+	}
+}
+
+.company-name {
+	color: $white;
+	margin: 3rem auto 0;
+	text-align: center;
+	line-height: 1.6;
+	text-transform: uppercase;
+}
+.hotline-top {
+	color: $white;
+	text-align: right;	
+}
+
+.logo {
+	margin: 1rem;
+}
+
+.hotline-top {
+	margin-top: 3.5rem;
+	text-align: left;
+
+	strong {
+		text-transform: uppercase;
+	}
+}
+
+.btn-toggle-navtop {
+    position: absolute;
+    top: -6rem;
+    color: $white;
+    right: 1.5rem;
+}
+
+.navbar.nav-top-header{
+	padding: 0;
+}
+
+.navbar-toggler{
+	font-size: 2rem;
+}

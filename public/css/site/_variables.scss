@@ -1,0 +1,86 @@
+// Colors variables
+//
+
+$orange:					#f96700;
+$orange-dark:				#de2f1e;
+$apple: 					#7ad23d;
+$white:						#fff;
+$black:						#000;
+$black-light:				#191919;
+$gray: 						#555;
+$gray-light:				#ddd;
+$gray-light-1:				#d8d8d8;
+$gray-blue:					#465259;
+
+$color-gradient-1:			#34b6d9;
+$color-gradient-2:			#3464d9;
+$whitef4: #f4f4f4;
+
+$search-bg:				#ddd;
+$progress-bg-gradient:	linear-gradient(to right, $color-gradient-1, $color-gradient-2);
+$progress-bg-gradient-to-left:  linear-gradient(to left, $color-gradient-1, $color-gradient-2);
+$progress-bg-gradient-to-bottom:  linear-gradient(to bottom, $color-gradient-1, $color-gradient-2);
+$progress-bg-gradient-160:  linear-gradient(360deg, $color-gradient-1, $color-gradient-2);
+
+
+
+$button-bg-gradient:    linear-gradient(160deg,    $color-gradient-1, $color-gradient-2);
+$gift-bg-gradient:      linear-gradient(160deg,    $color-gradient-1, $color-gradient-2);
+
+
+// Link color
+$link-color:                 #444;
+$link-decoration:            none !default;
+$link-hover-color:           #026BE0;
+$link-hover-decoration:      none !default;
+
+
+// Typography
+
+$font-family-sans-serif: "Open Sans", Arial, sans-serif;
+$font-weight-medium: 	600;
+$font-weight-bold: 		700;
+
+$font-size-root:        10px;
+
+// Components variables
+//
+
+$search-border-radius: 	28px;
+$btn-border-radius: 	3px;
+
+
+// Form
+
+$input-bg: #fff;
+
+
+// Grid breakpoints
+//
+
+$grid-breakpoints: (
+  // Extra small screen / phone
+  xs: 0,
+  // Small screen / phone
+  sm: 544px,
+  // Medium screen / tablet
+  md: 768px,
+  // Large screen / desktop
+  lg: 992px,
+  // Extra large screen / wide desktop
+  xl: 1200px
+);
+
+// Grid configuration
+
+$container-max-widths: (
+  sm: 576px,
+  md: 720px,
+  lg: 940px,
+  xl: 1170px
+);
+
+$grid-columns:               12;
+$grid-gutter-width:          3rem; // 30px
+
+
